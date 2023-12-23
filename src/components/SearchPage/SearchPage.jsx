@@ -16,7 +16,7 @@ const SearchPage = () => {
     return (
         <div>
             <Form className="d-flex SearchBar">
-                <Link to={"/"} style={{ width: "fit-content" }}><Button variant="outline-primary">go back</Button></Link>
+                <Link to={"/nwe"} style={{ width: "fit-content" }}><Button variant="outline-primary">go back</Button></Link>
                 <span className='SearchInputs'>
                     <Form.Control
                         type="text"
