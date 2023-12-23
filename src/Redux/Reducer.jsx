@@ -10,12 +10,12 @@ import BuyPage from "../pages/BuyPage";
 export const routes = () => {
     return [
         { path: "/electronic-shop", name: "home", ele: <HomePage /> },
-        { path: "/Sale", name: "Sale", ele: <SalePage /> },
-        { path: "/Best-Seller", name: "Best Seller", ele: <BestSellerPage /> },
-        { path: "/New-Merchandise", name: "New merchandise", ele: <NewMerchandise /> },
-        { path: "/SearchPage", ele: <SearchPage /> },
-        { path: "/Cart", ele: <ShoppingCart /> },
-        { path: "/buy", ele: <BuyPage /> },
+        { path: "/electronic-shop/Sale", name: "Sale", ele: <SalePage /> },
+        { path: "/electronic-shop/Best-Seller", name: "Best Seller", ele: <BestSellerPage /> },
+        { path: "/electronic-shop/New-Merchandise", name: "New merchandise", ele: <NewMerchandise /> },
+        { path: "/electronic-shop/SearchPage", ele: <SearchPage /> },
+        { path: "/electronic-shop/Cart", ele: <ShoppingCart /> },
+        { path: "/electronic-shop/buy", ele: <BuyPage /> },
     ];
 }
 const day = moment().format("DD")
@@ -25,7 +25,7 @@ export const MainData = () => {
     return [
         {
             sectionName: "Men clothes",
-            path: "/MenSection",
+            path: "/electronic-shop/MenSection",
             cardData: [
                 {
                     discount: 10,
@@ -223,7 +223,7 @@ export const MainData = () => {
         },
         {
             sectionName: "Women's Clothing",
-            path: "/WomenSection",
+            path: "/electronic-shop/WomenSection",
             cardData: [
                 {
                     discount: 5,
@@ -349,7 +349,7 @@ export const MainData = () => {
         },
         {
             sectionName: "Baby girls clothes",
-            path: "/girlsSection",
+            path: "/electronic-shop/girlsSection",
             cardData: [
                 {
                     discount: false,
@@ -547,7 +547,7 @@ export const MainData = () => {
         },
         {
             sectionName: "Baby boys clothes",
-            path: "/boysSection",
+            path: "/electronic-shop/boysSection",
             cardData: [
                 {
                     discount: false,
@@ -765,10 +765,3 @@ export const CartProducts = (state = [], action = { type: "", DeleteIndex: "" })
     }
     return state
 }
-
-
-
-
-
-
-

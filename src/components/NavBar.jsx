@@ -12,7 +12,7 @@ const NavBar = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
-                <Link to={"/nwe"} className='navbar-brand'>
+                <Link to={"/electronic-shop"} className='navbar-brand'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 187 40">
                         <path fill="#3A724F"
                             fillRule="evenodd"
@@ -57,7 +57,7 @@ const NavBar = () => {
                                 {page.name}
                             </Link>
                         )}
-                        <Link to={"/SearchPage"} className='SearchButton'><Button variant="outline-success">Search</Button></Link>
+                        <Link to={"/electronic-shop/SearchPage"} className='SearchButton'><Button variant="outline-success">Search</Button></Link>
                     </Nav>
                 </Navbar.Collapse>
                 <CartIcon />

@@ -21,7 +21,7 @@ const ShoppingCart = () => {
             <div className='cart-actions'>
                 <Link to={"/electronic-shop"}><Button variant="outline-primary">go back</Button></Link>
                 <div>All products({CartProducts.length})</div>
-                <Link to={"/buy"}>
+                <Link to={"/electronic-shop/buy"}>
                     <Button variant="primary">buy now {totalPrice}$</Button>
                 </Link>
             </div>
