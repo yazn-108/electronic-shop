@@ -8,6 +8,7 @@ import CartIcon from './cartComponents/CartIcon';
 const NavBar = () => {
     const routes = useSelector(state => state.routes)
     const location = useLocation().pathname
+    window.onload = () => location === "/electronic-shop/" ? document.querySelector(".nav-link").style.color = "red" : "";
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
