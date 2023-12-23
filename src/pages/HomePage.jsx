@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-import React from 'react'
 import { Container } from 'react-bootstrap'
 import Carousels from '../components/homeComponents/Carousels'
 import Categories from '../components/homeComponents/Categories'

@@ -1,10 +1,9 @@
 import { combineReducers, legacy_createStore } from "redux";
-import { routes, sections, CartProducts, SearchData } from "./Reducer";
+import { routes, MainData, CartProducts } from "./Reducer";
 const reducers = combineReducers({
     routes: routes,
-    sections: sections,
+    MainData: MainData,
     CartProducts: CartProducts,
-    SearchData: SearchData,
 })
 const store = legacy_createStore(reducers);
 export default store;

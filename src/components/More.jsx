@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 import { Button } from 'react-bootstrap'
 import { ArrowRightCircleFill } from 'react-bootstrap-icons'
 import { Link } from 'react-router-dom'
@@ -13,5 +13,8 @@ const More = ({ path }) => {
             </Link>
         </div>
     )
+}
+More.propTypes = {
+    path: PropTypes.string,
 }
 export default More

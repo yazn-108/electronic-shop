@@ -1,6 +1,4 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-import React, { useRef } from 'react'
+import PropTypes from 'prop-types';
 import { XSquareFill } from 'react-bootstrap-icons'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -28,9 +26,15 @@ const MoreDetails = ({ Details, state }) => {
                         {Details.moreDetails.map((url, i) => <SwiperSlide key={i}><img src={url} alt='' /></SwiperSlide>)}
                     </Swiper>
                 </Card.Body>
-                <XSquareFill className='closeIcon' onClick={() => state(null)} />
+                <div className='closeIcon'>
+                    <XSquareFill onClick={() => state(null)} />
+                </div>
             </div>
         </div>
     )
+}
+MoreDetails.propTypes = {
+    Details: PropTypes.object,
+    state: PropTypes.function,
 }
 export default MoreDetails

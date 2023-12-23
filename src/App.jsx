@@ -1,11 +1,9 @@
-/* eslint-disable no-unused-vars */
-import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import MoreProduct from './components/MoreProduct/MoreProduct'
 const App = () => {
   const routes = useSelector(state => state.routes)
-  const sections = useSelector(state => state.sections)
+  const sections = useSelector(state => state.MainData)
   return (
     <BrowserRouter>
       <Routes>
