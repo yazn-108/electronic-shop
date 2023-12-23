@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
-                <Link to={"/"} className='navbar-brand'>
+                <Link to={"/new"} className='navbar-brand'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 187 40">
                         <path fill="#3A724F"
                             fillRule="evenodd"
