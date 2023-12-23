@@ -9,7 +9,7 @@ import SalePage from "../pages/SalePage";
 import BuyPage from "../pages/BuyPage";
 export const routes = () => {
     return [
-        { path: "/", name: "home", ele: <HomePage /> },
+        { path: "/new", name: "home", ele: <HomePage /> },
         { path: "/Sale", name: "Sale", ele: <SalePage /> },
         { path: "/Best-Seller", name: "Best Seller", ele: <BestSellerPage /> },
         { path: "/New-Merchandise", name: "New merchandise", ele: <NewMerchandise /> },
