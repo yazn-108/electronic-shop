@@ -19,7 +19,7 @@ const ShoppingCart = () => {
         <Container className='categories-sections section'>
             {info && <MoreDetails Details={info} state={setInfo} />}
             <div className='cart-actions'>
-                <Link to={"/nwe"}><Button variant="outline-primary">go back</Button></Link>
+                <Link to={"/electronic-shop"}><Button variant="outline-primary">go back</Button></Link>
                 <div>All products({CartProducts.length})</div>
                 <Link to={"/buy"}>
                     <Button variant="primary">buy now {totalPrice}$</Button>
@@ -73,7 +73,7 @@ const ShoppingCart = () => {
                     }) : <h3 className='empty'>There are no products in the cart</h3>
                 }
             </div>
-        </Container>
+        </Container >
     )
 }
 export default ShoppingCart

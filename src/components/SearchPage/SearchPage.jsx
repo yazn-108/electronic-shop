@@ -16,7 +16,7 @@ const SearchPage = () => {
     return (
         <div>
             <Form className="d-flex SearchBar">
-                <Link to={"/nwe"} style={{ width: "fit-content" }}><Button variant="outline-primary">go back</Button></Link>
+                <Link to={"/electronic-shop"} style={{ width: "fit-content" }}><Button variant="outline-primary">go back</Button></Link>
                 <span className='SearchInputs'>
                     <Form.Control
                         type="text"
@@ -39,7 +39,7 @@ const SearchPage = () => {
                         : <h3 className='empty'>There are no products with this name</h3>
                 }
             </div>
-        </div>
+        </div >
     )
 }
 export default SearchPage
