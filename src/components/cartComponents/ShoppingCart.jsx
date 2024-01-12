@@ -19,9 +19,9 @@ const ShoppingCart = () => {
         <Container className='categories-sections section'>
             {info && <MoreDetails Details={info} state={setInfo} />}
             <div className='cart-actions'>
-                <Link to={"/electronic-shop"}><Button variant="outline-primary">go back</Button></Link>
+                <Link to={"/"}><Button variant="outline-primary">go back</Button></Link>
                 <div>All products({CartProducts.length})</div>
-                <Link to={"/electronic-shop/buy"}>
+                <Link to={"/buy"}>
                     <Button variant="primary">buy now {totalPrice}$</Button>
                 </Link>
             </div>

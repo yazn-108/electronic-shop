@@ -8,7 +8,7 @@ const MoreCategories = ({ data }) => {
     return (
         <Container className='categories-sections section'>
             <MainTitle title={data.sectionName} />
-            <Link to={"/electronic-shop"} style={{ width: "fit-content" }}><Button variant="outline-primary">go back</Button></Link>
+            <Link to={"/"} style={{ width: "fit-content" }}><Button variant="outline-primary">go back</Button></Link>
             <Cards
                 array={data.cardData}
                 All={true}

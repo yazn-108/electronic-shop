@@ -9,13 +9,13 @@ import SalePage from "../pages/SalePage";
 import BuyPage from "../pages/BuyPage";
 export const routes = () => {
     return [
-        { path: "/electronic-shop", name: "home", ele: <HomePage /> },
-        { path: "/electronic-shop/Sale", name: "Sale", ele: <SalePage /> },
-        { path: "/electronic-shop/Best-Seller", name: "Best Seller", ele: <BestSellerPage /> },
-        { path: "/electronic-shop/New-Merchandise", name: "New merchandise", ele: <NewMerchandise /> },
-        { path: "/electronic-shop/SearchPage", ele: <SearchPage /> },
-        { path: "/electronic-shop/Cart", ele: <ShoppingCart /> },
-        { path: "/electronic-shop/buy", ele: <BuyPage /> },
+        { path: "/", name: "home", ele: <HomePage /> },
+        { path: "/Sale", name: "Sale", ele: <SalePage /> },
+        { path: "/Best-Seller", name: "Best Seller", ele: <BestSellerPage /> },
+        { path: "/New-Merchandise", name: "New merchandise", ele: <NewMerchandise /> },
+        { path: "/SearchPage", ele: <SearchPage /> },
+        { path: "/Cart", ele: <ShoppingCart /> },
+        { path: "/buy", ele: <BuyPage /> },
     ];
 }
 const day = moment().format("DD")
@@ -25,7 +25,7 @@ export const MainData = () => {
     return [
         {
             sectionName: "Men clothes",
-            path: "/electronic-shop/MenSection",
+            path: "/MenSection",
             cardData: [
                 {
                     discount: 10,
@@ -223,7 +223,7 @@ export const MainData = () => {
         },
         {
             sectionName: "Women's Clothing",
-            path: "/electronic-shop/WomenSection",
+            path: "/WomenSection",
             cardData: [
                 {
                     discount: 5,
@@ -349,7 +349,7 @@ export const MainData = () => {
         },
         {
             sectionName: "Baby girls clothes",
-            path: "/electronic-shop/girlsSection",
+            path: "/girlsSection",
             cardData: [
                 {
                     discount: false,
@@ -547,7 +547,7 @@ export const MainData = () => {
         },
         {
             sectionName: "Baby boys clothes",
-            path: "/electronic-shop/boysSection",
+            path: "/boysSection",
             cardData: [
                 {
                     discount: false,

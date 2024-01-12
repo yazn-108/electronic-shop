@@ -4,7 +4,7 @@ import VisaCard from '../components/buyComponents/VisaCard'
 const BuyPage = () => {
     return (
         <Container className='BuyPage'>
-            <Link to={"/electronic-shop/Cart"}><Button variant="outline-primary">go back to cart</Button></Link>
+            <Link to={"/Cart"}><Button variant="outline-primary">go back to cart</Button></Link>
             <VisaCard />
         </Container>
     )
